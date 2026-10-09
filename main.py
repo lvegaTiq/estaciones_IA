@@ -90,9 +90,10 @@ estaciones_transferencia = {
     "Banderas"
 }
 
-estaciones_cerradas = set()
+estaciones_cerradas = {
+    "Avenida Jiménez"
+    }
 
-conexiones_congestionadas = set()
 
 coordenadas = {
     "Portal Norte": (0, 10),
