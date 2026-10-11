@@ -1,0 +1,40 @@
+REPORTE DE PRUEBAS - APRENDIZAJE NO SUPERVISADO
+=======================================================
+
+1. INFORMACIÓN DEL DATASET
+Total de registros: 1000
+Variables utilizadas: hora, dia_semana, lluvia, distancia_km, hora_pico
+Valores faltantes: 0
+
+2. ALGORITMO UTILIZADO
+Modelo: K-Means
+Normalización: StandardScaler
+Cantidad de clusters: 8
+
+3. EVALUACIÓN DEL MODELO
+K=2 | Inercia=3974.09 | Silhouette=0.2179
+K=3 | Inercia=3458.57 | Silhouette=0.2062
+K=4 | Inercia=2956.84 | Silhouette=0.2574
+K=5 | Inercia=2723.46 | Silhouette=0.2253
+K=6 | Inercia=2527.65 | Silhouette=0.2424
+K=7 | Inercia=2326.25 | Silhouette=0.2364
+K=8 | Inercia=2095.73 | Silhouette=0.2750
+
+Mejor cantidad de clusters evaluada: 8
+Mejor Silhouette Score: 0.2750
+
+4. PERFIL DE LOS CLUSTERS
+ cluster  cantidad_recorridos  hora_promedio  dia_semana_promedio  distancia_promedio_km  proporcion_lluvia  proporcion_hora_pico
+       0                  141          14.23                 1.31                  13.95                1.0                   0.0
+       1                  130          14.46                 4.72                  11.44                1.0                   0.0
+       2                  144          13.62                 4.72                  11.82                0.0                   0.0
+       3                  105           7.65                 2.94                  12.44                1.0                   1.0
+       4                  105           7.50                 3.08                  12.09                0.0                   1.0
+       5                   89          18.71                 3.04                  13.23                0.0                   1.0
+       6                  164          16.03                 1.44                  13.84                0.0                   0.0
+       7                  122          18.41                 3.04                  13.30                1.0                   1.0
+
+5. VALIDACIONES
+Total de recorridos agrupados: 1000
+Coincidencia con el dataset original: True
+Cantidad de grupos generados: 8

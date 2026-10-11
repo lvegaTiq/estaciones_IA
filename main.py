@@ -457,6 +457,7 @@ def mostrar_resultado(resultado):
         f"Estaciones recorridas: "
         f"{numero_estaciones}"
     )
+    
     print(
         f"Tramos recorridos: "
         f"{numero_tramos}"
